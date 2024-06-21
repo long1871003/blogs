@@ -7,22 +7,47 @@ using std::endl;
 using std::ifstream;
 using std::ofstream;
 
-
-int main(){
+int main()
+{
     cout << "\033c";
-    
-    // 输入 38.5 19.2
-    // char ch;     // 输出3
-    // int ch;      // 输出38
-    // double ch;   // 输出38.5
-    // char ch[50]; // 输出38.5 遇到空白字符停止
-
+    // char ch;
+    // cout << "输入: ";
     // cin >> ch;
+    // cout << "ch = " << ch << endl;
 
-    char word[50];
-    cin.getline(word, 50); //输出38.5 19.2，遇到换行符停止，换行符被丢弃
+    // int n;
+    // cout << "输入: ";
+    // cin >> n;
+    // cout << "n = " << n << endl;
 
-    cout << word << endl;
+    // double x;
+    // cout << "输入: ";
+    // cin >> x;
+    // cout << "x = " << x << endl;
+
+    // char ch[20];
+    // cout << "输入:";
+    // cin >> ch;
+    // cout << "ch = " << ch << endl;
+
+    // char ch[20];
+    // cout << "输入:";
+    // cin.getline(ch, 20);
+    // cout << "ch = " << ch << endl;
+
+    char ch[20];
+    int n;
+    double x;
+    cout << "输入一个字符：";
+    cin >> ch;
+    cout << "输入一个整数：";
+    cin >> n;
+    cout << "输入一个浮点数：";
+    cin >> x;
+
+    cout << "ch[20] = " << ch << endl;
+    cout << "n = " << n << endl;
+    cout << "x = " << x << endl;
 
     return 0;
 }
